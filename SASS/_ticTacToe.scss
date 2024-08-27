@@ -1,0 +1,74 @@
+.tic {
+    i {
+        color: $ticTacToe-color;
+    }
+}
+
+.content-tic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.548);
+
+    .tic-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        .box {
+            background-color: $tic-secondary-color;
+            width: 150px;
+            height: 150px;
+            border: 4px solid $ticTacToe-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .start-container {
+        display: flex;
+        width: 100%;
+        max-width: 450px;
+
+        justify-content: center;
+        padding: 15px;
+        
+
+        .start-btn {
+            background-color: maroon;
+            font-size: 2rem;
+            padding: 5px 15px;
+            border: 2px solid $ticTacToe-color;
+            color: $ticTacToe-color;
+            cursor: pointer;
+            text-align: center;
+            max-width: 149.13px;
+            width: 100%;
+            
+        }
+
+        .restart-btn {
+            background-color: maroon;
+            font-size: 2rem;
+            padding: 5px 15px;
+            border: 2px solid $ticTacToe-color;
+            color: $ticTacToe-color;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}
+
+.showcase {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 35px;
+    border: 4px solid $ticTacToe-color;
+    border-radius: 5px;
+}

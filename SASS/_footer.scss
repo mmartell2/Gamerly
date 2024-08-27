@@ -1,12 +1,11 @@
 footer {
+    font-family: cursive;
+    display: flex;
     background-color: $background-color;
-    border-top: 3px solid $landing-color;
+    border-top: 3px solid $hover-color;
     position: relative;
     bottom: 0;
     width: 100%;
     grid-area: footer;
-
-    i {
-        color: $landing-color;
-    }
+    z-index: -1;
 }
