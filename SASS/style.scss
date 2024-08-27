@@ -1,0 +1,79 @@
+@import 'colors.scss';
+@import 'footer.scss';
+@import 'landing.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    'head'
+    'content'
+    'footer';
+    grid-template-rows: 6vh 88vh 6vh;
+}
+
+.content {
+    grid-area: content;
+}
+
+.top-bar {
+    width: 100vw;
+    padding: 5px 0;
+    background-color: $background-color;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.534);
+    grid-area: head;
+
+    .flex {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 5px;
+
+        i {
+            color: $landing-color;
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    background-color: $background-color;
+    max-width: 400px;
+    width: 100%;
+
+    .top-nav {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 8px;
+        height: 6vh;
+        border-bottom: 3px solid $landing-color;
+        gap: 25px;
+
+        i {
+            color: $landing-color;
+        }
+    }
+
+    ul{
+
+
+        li {
+
+
+            a {
+                font-size: 1.2rem;
+                color: white;
+            }
+        }
+    }
+}
